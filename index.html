@@ -46,8 +46,10 @@
             .separation-no-last-card{margin-right: 0px;}
             .box-heigth{height: 70px;}
             .top-side-border{border-radius: 15px 15px 0px 0px;}
+            .button-set{border-radius: 35px; text-transform: uppercase;}
+            .maargin-header{margin-left: 70px;}
 
-
+        
         .bg-color-1{background: #A3A656;}
         .text-color-1{color: #A3A656;}
         .bg-color-2{background: #384001;}
@@ -68,30 +70,30 @@
 <body>
     <div class="container-fluid"><!-- Container.principal -->
          <div class="row navigation bg-color-1"> <!-- Row.BarraDeNavegacion-->
-            <div class="col align-items-center"><!-- Row.BarraDeNavegacion: Options -->
-                <ul class="row d-inline text-menu">
+            <div class="col align-items-center pt-4"><!-- Row.BarraDeNavegacion: Options -->
+                <ul class="row d-inline text-menu ">
                     <!--FIXME: Arreglar la disposicion de la lista en pantalla-->
-                    <li  class="d-inline">Promociones</li>
+                    <li  class="d-inline maargin-header">Promociones</li>
                     <li  class="d-inline">Fotos</li>
                     <li  class="d-inline">Servicios</li>
                     <li  class="d-inline">Mapa</li>
                     <li  class="d-inline">Contacto</li>
                 </ul>
             </div>
-            <div class="col text-miniatura "> <!-- Row.BarraDeNavegacion: Profile -->
+            <div class="col text-miniatura"> <!-- Row.BarraDeNavegacion: Profile -->
                 <!--FIXME: Arreglar el centrado de la seccion de perfil, pasarlo a la derecha-->
                 <img src="resources/images/user.png" class="p-2" alt="">
                 <p class="d-inline">Mi perfil</p>
                 <p class="d-inline">ES</p>
                 <img src="resources/images/flag.png" class="p-2" alt="">
-                <img src="resources/images/arrow.png" alt="">
+                <img src="resources/images/arrow.png" class="" alt="">
             </div>
          </div>
          <div class="row background-img"><!-- Imagen presentacion -->
             <div>
                 <!--TODO: Ajustar el contenido de las letras del banneer de bienvenida-->
                 <p class=" text-Romanesco">SPA - Jodos</p>
-                <p class="d-inline"> Regálate un momento de paz y <br>
+                <p class="d-inline mx-auto"> Regálate un momento de paz y <br>
                     consiente a tu piel en el mejor lugar
                 </p> 
             </div>
@@ -99,36 +101,36 @@
          <div class="row bg-color-4 input">
             <!--FIXME: Corregir la disposicion de las cajas para dimensiones pequenias-->
             <div class=" d-flex justify-content-center">
-                <span class=" text-menu mt-4 mb-4 ">RESERVA TU CITA: </span>
-                <input class=" p-2 input-box" type="text">
+                <span class=" text-menu  mb-4 aligne-items-top">RESERVA TU CITA: </span>
+                <input class=" p-2 input-box rounded" type="text">
                 <span class=" text-menu mt-4 mb-4 ">CÓDIGO PROMOCIONAL: </span>
-                <input class=" text-placeholder input-box p-2  " type="text" value="CODIGO">
+                <input class=" text-placeholder input-box p-2  rounded" type="text" value="CODIGO">
             </div>
          </div>
          <div class="top-100  d-flex justify-content-center"> <!--Final Sercive section-->
 
                 <div class="d-inline-block card-separation ">
-                    <p class="bg-color-1 m-0 box-heigth top-side-border">Masaje de pies</p>
+                    <p class="bg-color-1 m-0 box-heigth top-side-border p-2 text-center text-titulo-2 text-white">Masaje de pies</p>
                     <img class="img-fluid" src="resources/images/pies.png" alt="">
                     <p>Esta es una descipcion de la opcion <br> en custion...</p>
-                    <span>65$</span>
-                    <span>RESERVAR</span>
+                    <span class="d-inline-block text-titulo-2 px-5">65$</span>
+                    <span class="d-inline-block button-set bg-color-1 text-white  py-2 px-5">RESERVAR</span>
                 </div>
 
                 <div class="d-inline-block card-separation ">
-                    <p class="bg-color-1 m-0 box-heigth top-side-border"> Masaje relajante</p>
+                    <p class="bg-color-1 m-0 box-heigth top-side-border p-2 text-center text-titulo-2 text-white"> Masaje relajante</p>
                     <img class="img-fluid" src="resources/images/relajante.png" alt="">
                     <p>Esta es una descipcion de la opcion <br> en custion...</p>
-                    <span>65$</span>
-                    <span>RESERVAR</span>
+                    <span class="d-inline-block text-titulo-2 px-5">60$</span>
+                    <span class="d-inline-block button-set bg-color-1 text-white  py-2 px-5">RESERVAR</span>
                 </div>
 
-                <div class="d-inline-block card-separation separation-no-last-card">
-                    <p class="bg-color-1 m-0 box-heigth  top-side-border ">Masaje con bambu</p>
+                <div class="card-separation separation-no-last-card">
+                    <p class="bg-color-1 m-0 box-heigth  top-side-border p-2 text-center text-titulo-2 text-white">Masaje con bambu</p>
                     <img class="img-fluid" src="resources/images/bambu.png" alt="">
                     <p>Esta es una descipcion de la opcion <br> en custion...</p>
-                    <span>65$</span>
-                    <span>RESERVAR</span>
+                    <div class="d-inline-block text-titulo-2 px-5">58$</div>
+                    <div class="d-inline-block button-set bg-color-1 text-white py-2 px-5">RESERVAR</div>
                 </div>
      
          </div>
