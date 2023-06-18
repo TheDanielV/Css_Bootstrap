@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!--
+             TODO: pasar los estilos a un solo css
+        -->
+    <style>
+        *{border: 1px solid red; 
+            margin: 0px;
+            padding: 0px;
+        }
+        @font-face {
+    font-family: 'Inter';
+    src: url('/resources/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Romanesco';
+    src: url('/resources/fonts/Romanesco/Romanesco-Regular.ttf') format('truetype');
+  }
+            .navigation{
+                position: relative;
+                height: 70px;
+            }
+
+            .background-img{
+             background-image: url("resources/images/main.png");
+             background-position: center;
+                background-size: cover;
+                height: 900px;
+                }
+            .input{height: 100px;}
+
+            .input-box{margin-top: 1%; margin-bottom: 1%;}
+            
+            .left-p-134{padding-left: 134px;}
+            .top-100{margin-top: 100px;padding-top: 0px;}
+            @media (min-width: 1024px) {
+                .card-separation{ margin-right: 140px;}  
+            }   
+
+            .separation-no-last-card{margin-right: 0px;}
+            .box-heigth{height: 70px;}
+            .top-side-border{border-radius: 15px 15px 0px 0px;}
+
+
+        .bg-color-1{background: #A3A656;}
+        .text-color-1{color: #A3A656;}
+        .bg-color-2{background: #384001;}
+        .text-color-2{color: #384001;}
+        .bg-color-3{background: #FFEFDF;}
+        .text-color-3{color: #FFEFDF;}
+        .bg-color-4{background: #F2F6F6;}
+        .text-color-4{color: #F2F6F6;}
+        .text-titulo-1{ font-family: 'Inter'; font-weight: 700;font-size: 48px;}
+        .text-titulo-2{ font-family: 'Inter'; font-weight: 600;font-size: 32px;}
+        .text-miniatura{ font-family: 'Inter'; font-weight: 400;font-size: 14px;}
+        .text-menu{ font-family: 'Inter'; font-weight: 400;font-size: 16px; text-transform: uppercase;}
+        .text-normal{ font-family: 'Inter'; font-weight: 400;font-size: 16px;}
+        .text-placeholder{ font-family: 'Inter'; font-weight: 400;font-size: 14px; color: #9E9A9A;}
+        .text-Romanesco{ font-family: 'Romanesco'; font-weight: 400;font-size: 96px;}
+    </style>
+</head>
+<body>
+    <div class="container-fluid"><!-- Container.principal -->
+         <div class="row navigation bg-color-1"> <!-- Row.BarraDeNavegacion-->
+            <div class="col align-items-center"><!-- Row.BarraDeNavegacion: Options -->
+                <ul class="row d-inline text-menu">
+                    <!--FIXME: Arreglar la disposicion de la lista en pantalla-->
+                    <li  class="d-inline">Promociones</li>
+                    <li  class="d-inline">Fotos</li>
+                    <li  class="d-inline">Servicios</li>
+                    <li  class="d-inline">Mapa</li>
+                    <li  class="d-inline">Contacto</li>
+                </ul>
+            </div>
+            <div class="col text-miniatura "> <!-- Row.BarraDeNavegacion: Profile -->
+                <!--FIXME: Arreglar el centrado de la seccion de perfil, pasarlo a la derecha-->
+                <img src="resources/images/user.png" class="p-2" alt="">
+                <p class="d-inline">Mi perfil</p>
+                <p class="d-inline">ES</p>
+                <img src="resources/images/flag.png" class="p-2" alt="">
+                <img src="resources/images/arrow.png" alt="">
+            </div>
+         </div>
+         <div class="row background-img"><!-- Imagen presentacion -->
+            <div>
+                <!--TODO: Ajustar el contenido de las letras del banneer de bienvenida-->
+                <p class=" text-Romanesco">SPA - Jodos</p>
+                <p class="d-inline"> Regálate un momento de paz y <br>
+                    consiente a tu piel en el mejor lugar
+                </p> 
+            </div>
+         </div>
+         <div class="row bg-color-4 input">
+            <!--FIXME: Corregir la disposicion de las cajas para dimensiones pequenias-->
+            <div class=" d-flex justify-content-center">
+                <span class=" text-menu mt-4 mb-4 ">RESERVA TU CITA: </span>
+                <input class=" p-2 input-box" type="text">
+                <span class=" text-menu mt-4 mb-4 ">CÓDIGO PROMOCIONAL: </span>
+                <input class=" text-placeholder input-box p-2  " type="text" value="CODIGO">
+            </div>
+         </div>
+         <div class="top-100  d-flex justify-content-center"> <!--Final Sercive section-->
+
+                <div class="d-inline-block card-separation ">
+                    <p class="bg-color-1 m-0 box-heigth top-side-border">Masaje de pies</p>
+                    <img class="img-fluid" src="resources/images/pies.png" alt="">
+                    <p>Esta es una descipcion de la opcion <br> en custion...</p>
+                    <span>65$</span>
+                    <span>RESERVAR</span>
+                </div>
+
+                <div class="d-inline-block card-separation ">
+                    <p class="bg-color-1 m-0 box-heigth top-side-border"> Masaje relajante</p>
+                    <img class="img-fluid" src="resources/images/relajante.png" alt="">
+                    <p>Esta es una descipcion de la opcion <br> en custion...</p>
+                    <span>65$</span>
+                    <span>RESERVAR</span>
+                </div>
+
+                <div class="d-inline-block card-separation separation-no-last-card">
+                    <p class="bg-color-1 m-0 box-heigth  top-side-border ">Masaje con bambu</p>
+                    <img class="img-fluid" src="resources/images/bambu.png" alt="">
+                    <p>Esta es una descipcion de la opcion <br> en custion...</p>
+                    <span>65$</span>
+                    <span>RESERVAR</span>
+                </div>
+     
+         </div>
+         <div class="row">
+            <!--
+                TODO: Crear la seccion de membresías
+            -->
+         </div>
+         <!--TODO: agregar el footer, copia y pega del haeder-->
+    </div>
+    
+</body>
+</html>
