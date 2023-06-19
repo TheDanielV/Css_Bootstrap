@@ -1,0 +1,82 @@
+*{border: 0px solid red; 
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+font-family: 'Inter';
+src: url('../resources/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Romanesco';
+src: url('../resources/fonts/Romanesco/Romanesco-Regular.ttf') format('truetype');
+}
+    .navigation{
+        position: relative;
+        height: 70px;
+    }
+
+    .background-img{
+     background-image: url("../resources/images/main.png");
+     background-position: center;
+        background-size: cover;
+        height: 900px;
+        }
+    .input{height: 100px;}
+
+    .input-box{margin-top: 1%; margin-bottom: 1%;}
+    
+    .left-p-134{padding-left: 134px;}
+    .top-100{margin-top: 100px;padding-top: 0px;}
+    @media (min-width: 1024px) {
+        .card-separation{ margin-right: 140px;}  
+
+    } 
+    @media (min-width: 768px) {
+        .display-flex-mx-s{display: flex; justify-content: center;}
+        .card-menbership-section{height: 770px;}
+    }     
+    @media (max-width: 768px) {
+        .card-menbership-section{height:auto;}
+    }     
+    @media (max-width: 425px) {
+        .maargin-header{padding: 0px;}
+        .maargin-ul{padding: 0px;}
+        .box-heigth{height: auto;}
+        .postion-semi-centered{position: relative; top: 0%; left: 0%;}
+    }
+    @media (min-width: 425px) {
+        .maargin-header{padding-left: 70px;}
+        .maargin-ul{margin-left: 40px;}
+        .box-heigth{height: 70px;}
+        .box-heigth-footer-97{height: 97px;}
+        .postion-semi-centered{position: relative; top: 15%; left: 15%;}
+        .top-side-mobile{height: 90px;}
+
+    }    
+
+    .separation-no-last-card{margin-right: 0px;}
+
+    .top-side-border{border-radius: 15px 15px 0px 0px;}
+    .button-set{border-radius: 35px; text-transform: uppercase;}
+
+    .circle{ margin: 0px; padding: 0px; height: 233px; width: 233px; border: #384001 15px solid; border-radius: 100%;}
+
+    
+
+
+
+.bg-color-1{background: #A3A656;}
+.text-color-1{color: #A3A656;}
+.bg-color-2{background: #384001;}
+.text-color-2{color: #384001;}
+.bg-color-3{background: #FFEFDF;}
+.text-color-3{color: #FFEFDF;}
+.bg-color-4{background: #F2F6F6;}
+.text-color-4{color: #F2F6F6;}
+.text-titulo-1{ font-family: 'Inter'; font-weight: 700;font-size: 48px;}
+.text-titulo-2{ font-family: 'Inter'; font-weight: 600;font-size: 32px;}
+.text-miniatura{ font-family: 'Inter'; font-weight: 400;font-size: 14px;}
+.text-menu{ font-family: 'Inter'; font-weight: 400;font-size: 16px; text-transform: uppercase;}
+.text-normal{ font-family: 'Inter'; font-weight: 400;font-size: 16px;}
+.text-placeholder{ font-family: 'Inter'; font-weight: 400;font-size: 14px; color: #9E9A9A;}
+.text-Romanesco{ font-family: 'Romanesco'; font-weight: 400;font-size: 96px;}
